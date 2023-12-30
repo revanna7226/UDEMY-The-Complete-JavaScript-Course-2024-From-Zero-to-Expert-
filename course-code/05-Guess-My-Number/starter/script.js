@@ -69,6 +69,7 @@ document.querySelector('.check').addEventListener('click', function () {
       setScore(score);
       displayMessage(`🅾️ You lost the game!`);
       disableGuessInputFieldAndCheckButton(true);
+      document.querySelector('body').style.backgroundColor = 'black';
     }
   } else if (number < secretNumber) {
     displayMessage(`📉 Too low!`);
@@ -80,6 +81,7 @@ document.querySelector('.check').addEventListener('click', function () {
       setScore(score);
       displayMessage(`🅾️ You lost the game!`);
       disableGuessInputFieldAndCheckButton(true);
+      document.querySelector('body').style.backgroundColor = 'black';
     }
   }
 });
